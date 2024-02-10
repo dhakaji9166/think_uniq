@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  overflow: hidden;
+}
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/texture-1033755_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+.container {
+  width: 1420px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.header .nav-left a {
+  color: #0c0c0c;
+  font-size: 41px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+
+.header .nav-left a span {
+  margin-left: 10px;
+}
+
+.header .nav-left a span {
+  margin-left: -5px;
+  margin-right: 0px;
+  font-size: 7px;
+}
+
+.header .nav-right a {
+  color: #303030;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 10px;
+
+}
+
+.header .nav-right a:hover{
+  transform: scale(1.2);
+  transition: all ease-in-out 0.8s;
+  cursor: pointer;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 46px;
+  position: absolute;
+}
+
+.sashimi {
+  width: 40%;
+  margin-top: 32px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.sashimi h1 {
+  font-size: 105px;
+  font-weight: 700;
+  color: #000000;
+  font-family: "Playfair Display", serif;
+}
+
+.sashimi p {
+  font-size: 26px;
+  font-weight: 400;
+  color: #000000;
+  font-family: "Homemade Apple", cursive;
+  padding: 10px 0 15px 0;
+}
+
+.sashimi .card p {
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.sashimi .card {
+  width: 485px;
+  padding: 25px 48px 10px;
+  background-color: rgb(236, 236, 236);
+  text-align: start;
+  float: inline-end;
+}
+.sashimi .card a p {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f16f36;
+  padding: 20px 0px 20px 0;
+}
+
+.sashimi .card p:hover {
+  color: #333333b1;
+}
+
+.sashimi-right {
+  width: 60%;
+  position: relative;
+  margin-top: 10px;
+}
+
+.slider .sashimi-right .box-1 {
+  background: linear-gradient(
+    30deg,
+    rgb(179, 2, 4) 0%,
+    rgb(255, 42, 104) 100%
+  ) !important;
+}
+
+.slider .sashimi-right .box-2 {
+  background: linear-gradient(
+    145deg,
+    rgb(52, 229, 91) 0%,
+    rgb(29, 186, 147) 100%
+  ) !important;
+}
+
+.slider .sashimi-right .box-3 {
+  background: linear-gradient(
+    215deg,
+    rgb(255, 208, 0) 0%,
+    rgb(252, 168, 58) 100%
+  ) !important;
+}
+
+.slider .sashimi-right .box {
+  z-index: 8;
+  background: linear-gradient(
+    215deg,
+    rgb(255, 149, 0) 0%,
+    rgb(255, 94, 58) 100%
+  );
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 375px;
+  backdrop-filter: none;
+  filter: none;
+  transform-origin: 50% 50%;
+  opacity: 1;
+  transform: translate(0px, 0px);
+  visibility: visible;
+}
+
+.sashimi-right .box .box-img {
+  width: 500px;
+  position: absolute;
+  z-index: 8;
+  left: 24%;
+  bottom: -23%;
+  
+}
+
+.sashimi-right .box .pala-img{
+  width: 440px !important;
+  position: absolute;
+  z-index: 8;
+  left: 24%;
+  bottom: -18%;
+}
+.sashimi-right .box .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.btn button {
+  padding: 26px;
+  border: none;
+  background: #0c0c0c;
+  color: #fff;
+  margin: 0 -2.5px;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.btn .first {
+  padding: 26px;
+  border: none;
+  background: #0c0c0ce0;
+  color: #fff;
+  margin: 0 -2.5px;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+/* main slider class */
+
+.main-slider {
+  width: 100%;
+  position: relative;
+  height: 60vh;
+}
+.position h1 {
+  position: absolute;
+  z-index: 2;
+  top: 8%;
+  right: 49%;
+}
+
+.position-1 h1 {
+  position: absolute;
+  z-index: 2;
+  top: 8%;
+  right: 55%;
+}
+
+.carpaccio {
+  margin-top: 174px;
+}
+
+.panna {
+  margin-top: 173px;
+}
+
+/* toggle  */
+.toggel-main {
+  width: 600px;
+  height: 100vh;
+  text-align: center;
+  background-color: #e1e1e1;
+  margin: auto;
+  padding-top:100px ;
+  transition: 0.4s ease;
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 289px;
+margin: auto;
+}
+
+.toggles{
+  margin: 100px auto;
+  /* display: flex; */
+}
+
+.close-toggle {
+  position: absolute;
+  left: 40px;
+  top: 40%;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+
+.toggle-img {
+  width: 60px;
+}
+
+.toggle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.toggel-text h2 {
+  width: 200px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  font-family: "Manrope", sans-serif;
+}
+
+.toggel-main .toggle-img:hover {
+  transform: rotate(180deg);
+  transition: all ease-in-out 0.8s;
+}
+
+.toggel-text h2:hover{
+  transform: scale(1.1);
+  transition: all ease-in-out 0.8s;
+  cursor: pointer;
+}
+
+.toggles-open{
+  font-size: 50px;
+  color: #303030;
+  line-height: 2px;
+  position: absolute;
+  left: 40px;
+  cursor: pointer;
+}
+
+.socal-media{
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+}
+
+.socal-media ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 20px;
+
+}
+
+.socal-media ul li a{
+  color: #303030;
+  font-size: 22px;
+}
+
+.socal-media ul li:hover{
+  transform: scale(1.2);
+  transition: all ease-in-out 0.4s;
+} 
